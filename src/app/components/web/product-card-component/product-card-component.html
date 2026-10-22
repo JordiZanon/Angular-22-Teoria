@@ -1,0 +1,50 @@
+<div class="card h-100">
+  <img [src]="product().imageUrl" [alt]="product().title" class="card-img-top p-2">
+
+  <div class="card-body">
+    <div class="card-title">{{ product().title }}</div>
+
+    <div class="card-text">
+      <span class="badge bg-info">{{ product().category }}</span>
+    </div>
+
+    <div class="card-text">
+      Unidades disponibles: <span class="badge bg-info">{{ product().stock}}</span>
+    </div>
+  </div>
+
+  @if (showAlert()){
+    <div class="alert alert-danger py-2 fs-6" role="alert">
+    ¡Agotado! No puedes añadir mas unidades!
+    </div>
+  }
+  @if (isLowStock()){
+    <div class="alert alert-warning py-1 mb-2">Solo quedan {{product().stock}} unidades</div>
+  }
+  @if (isOutOfStock()){
+    <div class="alert alert-danger py-1 mb-2">Agotado</div>
+  } @else {
+    <div class="d-flex align-items-center gap-2 mb-3">
+      <label class="fs-7 text-muted">Cant</label>
+      <app-quantity-stepper-hijo-component
+        [maxStock]="product().stock"
+        [(quantity)]="selectedQuantity"/>
+    </div>
+  }
+
+
+  <div class="card-footer d-flex justify-content-between">
+    <div class="card-text">
+      <div class="text-danger">{{ product().price | currency: 'EUR' }}</div>
+    </div>
+
+
+    <div class="card-text text-end">
+      <div class="d-flex flex-column text-end">
+        <button [disabled]="isOutOfStock()" class="btn btn-sm btn-info me-2" (click)="onViewDetails()">Details</button>
+
+        <button [disabled]="isOutOfStock()" class="btn btn-sm btn-outline-success " (click)="onAddToCart()">🛒 Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>

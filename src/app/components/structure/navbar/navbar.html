@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" routerLink="/">🛒 AngularStore</a>
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/categories-list">Cat List</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/catalog">Catalog</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/user-profile">User Profile</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/cart-summary-t8">Cart Summary T8</a></li>
+
+          <!-- <li class="nav-item dropdown" ngbDropdown>  librería NG-Bootstrap, que adapta los componentes de Bootstrap
+          para que funcionen de manera nativa y reactiva con el ecosistema de Angular, sin depender de archivos JavaScript externos
+          manipulando el DOM.-->
+        <li class="nav-item dropdown">
+<!--          <a class="nav-link dropdown-toggle" ngbDropdownToggle role="button"-->
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Teoría
+          </a>
+            <!-- <ul class="dropdown-menu" ngbDropdownMenu>-->
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/clase/teoria3">Teoría 3</a></li>
+            <li><a class="dropdown-item" routerLink="/clase/teoria4">Teoría 4</a></li>
+            <li><a class="dropdown-item" routerLink="/clase/teoria5">Teoría 5</a></li>
+            <li><a class="dropdown-item" routerLink="/clase/teoria7">Teoría 7</a></li>
+            <li><a class="dropdown-item" routerLink="/clase/teoria8">Teoría 8</a></li>
+            <li><a class="dropdown-item" routerLink="/clase/teoria9">Teoría 9</a></li>
+            <li><a class="dropdown-item" routerLink="/clase/teoria10">Teoría 10</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-outline-light position-relative">
+          Ver Carrito
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
