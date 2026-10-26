@@ -12,6 +12,7 @@ import {CartSummaryT8} from './components/web/cart-summary-t8/cart-summary-t8';
 import {Teoria9} from './components/clase/teoria-9/teoria-9';
 import {Teoria3} from './components/clase/teoria-3/teoria-3';
 import {Teoria10} from './components/clase/teoria-10/teoria-10';
+import {Teoria11} from './components/clase/teoria-11/teoria-11';
 
 export const routes: Routes = [
 
@@ -51,6 +52,10 @@ export const routes: Routes = [
   {
     path: 'clase/teoria10',
     component: Teoria10,
+  },
+  {
+    path: 'clase/teoria11',
+    component: Teoria11,
   },
   {
     path: 'categories-list',
