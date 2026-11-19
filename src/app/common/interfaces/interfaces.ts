@@ -26,26 +26,38 @@ export interface CategoryInterface {
 }
 
 
-
-
-
-export interface Product
-{
-  id: string;
+export interface Product {
+  id: number;
   title: string;
   price: number;
   stock: number;
   description: string;
-  category: CategoryType;
-  imageUrl: string;
+  category: string;
+  image: string;
   rating: Rating;
 }
-export type CategoryType = 'electronics'| 'clothing'| 'books'| 'home';
 
 export interface Rating {
   rate: number;
   count: number;
 }
+
+export type CategoryType = 'electronics'| 'clothing'| 'books'| 'home';
+
+
+// export interface Product
+// {
+//   id: string;
+//   title: string;
+//   price: number;
+//   stock: number;
+//   description: string;
+//   category: CategoryType;
+//   imageUrl: string;
+//   rating: Rating;
+// }
+
+
 
 export interface Category
 {

@@ -39,7 +39,7 @@ export class CartService {
     })
   }
 
-  updateQuantity(productId: string, newQuantity: number){
+  updateQuantity(productId: number, newQuantity: number){
     if (newQuantity <= 0){
       this.removeItem(productId);
       return;
@@ -58,7 +58,7 @@ export class CartService {
     }
   }
 
-  removeItem(productId: string) {
+  removeItem(productId: number) {
     this.#items.update(items => items.filter(item => item.product.id !== productId))
   }
 

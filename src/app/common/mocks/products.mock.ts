@@ -2,11 +2,11 @@ import {Product} from '../interfaces/interfaces';
 
 export const PRODUCTS_MOCK: Product[] = [
   {
-    id: '1',
+    id: 1,
     title: 'Camiseta',
     description: 'Camiseta Molona',
     category: "clothing",
-    imageUrl: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
+    image: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
     stock: 5,
     rating: {
       rate: 4,
@@ -15,11 +15,11 @@ export const PRODUCTS_MOCK: Product[] = [
     price: 18,
   },
   {
-    id: '2',
+    id: 2,
     title: 'Pantalones',
     description: 'Pantalones Molones',
     category: "clothing",
-    imageUrl: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
+    image: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
     stock: 5,
     rating: {
       rate: 4.5,
@@ -28,11 +28,11 @@ export const PRODUCTS_MOCK: Product[] = [
     price: 23,
   },
   {
-    id: '3',
+    id: 3,
     title: 'Radio',
     description: 'Radio Molona',
     category: "electronics",
-    imageUrl: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
+    image: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
     stock: 5,
     rating: {
       rate: 3,
@@ -41,11 +41,11 @@ export const PRODUCTS_MOCK: Product[] = [
     price: 18,
   },
   {
-    id: '4',
+    id: 4,
     title: 'Avion',
     description: 'Avion Molona',
     category: "clothing",
-    imageUrl: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
+    image: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
     stock: 5,
     rating: {
       rate: 5.4,
@@ -54,11 +54,11 @@ export const PRODUCTS_MOCK: Product[] = [
     price: 18,
   },
   {
-    id: '5',
+    id: 5,
     title: 'Dinosaurio',
     description: 'Dinosaurio Molona',
     category: "books",
-    imageUrl: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
+    image: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
     stock: 5,
     rating: {
       rate: 6,
@@ -67,11 +67,11 @@ export const PRODUCTS_MOCK: Product[] = [
     price: 18,
   },
   {
-    id: '6',
+    id: 6,
     title: 'Cocodrilo',
     description: 'Camiseta Molona',
     category: "home",
-    imageUrl: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
+    image: 'https://static.kiabi.es/images/pack-de-2-camisetas-basicas-blanco-bze23_1_hd1.jpg?width=800',
     stock: 5,
     rating: {
       rate: 34,

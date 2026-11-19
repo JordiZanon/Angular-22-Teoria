@@ -13,6 +13,8 @@ import {Teoria9} from './components/clase/teoria-9/teoria-9';
 import {Teoria3} from './components/clase/teoria-3/teoria-3';
 import {Teoria10} from './components/clase/teoria-10/teoria-10';
 import {Teoria11} from './components/clase/teoria-11/teoria-11';
+import {Teoria12} from './components/clase/teoria-12/teoria-12';
+import {ProductDetailComponent} from './components/web/product-detail-component/product-detail-component';
 
 export const routes: Routes = [
 
@@ -58,8 +60,16 @@ export const routes: Routes = [
     component: Teoria11,
   },
   {
+    path: 'clase/teoria12',
+    component: Teoria12,
+  },
+  {
     path: 'categories-list',
     component: CategoriesListComponent,
+  },
+  {
+    path: 'product-detail',
+    component: ProductDetailComponent,
   },
   {
     path: 'product-card',

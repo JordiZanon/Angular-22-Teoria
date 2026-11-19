@@ -51,13 +51,13 @@ export class Teoria3 {
   };
 
   miProducto: Product = {
-    id: '1',
+    id: 1,
     title: 'Camiseta',
     price: 18.99,
     stock: 2,
     description: 'Camiseta molona',
     category: 'clothing',
-    imageUrl:
+    image:
       'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTwRR_8iakHdwNPEjWcUBmjBG2IiFYvqstT3xZAzOhrymChQtMGC6iVGDTbLV4DigrKR4JbD3zO8vy99FaGTfYoYm5nQeJCDCiLofizYq1UtoHEvH0oP3SbjwMG81YL4FF3haMawtg&usqp=CAc',
     rating: {
       count: 123467,

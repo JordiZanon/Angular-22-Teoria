@@ -14,14 +14,14 @@ export class CartDrawerComponent {
   isOpen = input<boolean>(false);
   closeDrawer = output<void>();
 
-  onDecrement(id: string, quantity: number) {
+  onDecrement(id: number, quantity: number) {
     this.cartService.updateQuantity(id, quantity - 1);
   }
-  onIncrement(id: string, quantity: number) {
+  onIncrement(id: number, quantity: number) {
     this.cartService.updateQuantity(id, quantity + 1);
   }
 
-  onRemove(id: string) {
+  onRemove(id: number) {
     this.cartService.removeItem(id);
   }
 

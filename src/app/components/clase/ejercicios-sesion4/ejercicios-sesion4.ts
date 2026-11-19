@@ -30,12 +30,12 @@ Crea una rutina que obtenga los productos de la categoría 'electronics' y les a
 
   products: Product[] = [
     {
-      id: '0',
+      id: 0,
       title: 'Camiseta',
       price: 5,
       description: 'Camiseta guapa',
       category: 'clothing',
-      imageUrl: 'imageCamiseta.jpg',
+      image: 'imageCamiseta.jpg',
       stock: 5,
       rating: {
         count: 1,
@@ -43,12 +43,12 @@ Crea una rutina que obtenga los productos de la categoría 'electronics' y les a
       }
     },
     {
-      id: '1',
+      id: 1,
       title: 'Radio',
       price: 15,
       description: 'Radio guapa',
       category: 'electronics',
-      imageUrl: 'imageRadio.jpg',
+      image: 'imageRadio.jpg',
       stock: 5,
       rating: {
         count: 2,
